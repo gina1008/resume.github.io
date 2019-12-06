@@ -1,0 +1,68 @@
+body
+{
+	font-family: "微軟正黑體";
+	background-attachment: fixed;
+	color: #880000;
+}
+header
+{
+    position:fixed;
+	left: 3cm;
+    top: 3%;
+    bottom: 3%;
+    width: 20%;
+    color: #880000;
+    background-color: rgba(255, 227, 194,0.8);
+    border-radius: 20px;
+}
+.me
+{
+	width: 70%;
+	position: relative;
+	top: 2%;
+	display: block;
+	margin: auto;
+	opacity: 0.9;
+}
+.motto
+{
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 4%;
+	opacity: 0.6;
+	background-color: #FFFFF0;
+	font-style: italic;
+	font-weight: bold;
+}
+.name
+{
+	text-align: center;
+	font-size: 50px;
+	position: relative;
+	top: 6%;
+}
+.ename
+{
+	text-align: center;
+	font-size: 10px;
+	position: relative;
+	top: 5%;
+	color: #AAAAAA;
+	font-weight: bold;
+}
+.a
+{
+	position: relative;
+	top: 1.2cm;
+	left: 13.5%;
+	opacity: 0.7;
+	font-weight: bold;
+}
+.b
+{
+	display: inline;
+	position: relative;
+	top: 1.45cm;
+	left: 12.5%;
+}
