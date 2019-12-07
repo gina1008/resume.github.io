@@ -71,8 +71,6 @@ header
 .title
 {
 	position: relative;
-	left: 31%;
-	top: 1.2cm;
 	text-align: center;
 	font-size: 25px;
 	background-color: rgba(244, 166, 98,0.8);
@@ -82,6 +80,7 @@ header
 	border-radius: 10px;
 	border-style: dotted;
 	border-color: #CD853F;
+	opacity: 0.7;
 }
 .wrapper1
 {
@@ -89,7 +88,7 @@ header
 	height: 100px;
 	position: absolute;
 	left: 32%;
-	top: 3.65cm;
+	top: 3.25cm;
 	clip: rect(0px, 100px, 100px, 50px);
 }
 .wrapper2
@@ -98,7 +97,7 @@ header
 	height: 100px;
 	position: absolute;
 	left: 43%;
-	top: 3.65cm;
+	top: 3.25cm;
 	clip: rect(0px, 100px, 100px, 50px);
 }
 .wrapper3
@@ -107,7 +106,7 @@ header
 	height: 100px;
 	position: absolute;
 	left: 32%;
-	top: 7.3cm;
+	top: 6.9cm;
 	clip: rect(0px, 100px, 100px, 50px);
 }
 .wrapper4
@@ -116,7 +115,7 @@ header
 	height: 100px;
 	position: absolute;
 	left: 43%;
-	top: 7.3cm;
+	top: 6.9cm;
 	clip: rect(0px, 100px, 100px, 50px);
 }
 .circle
@@ -244,4 +243,41 @@ div[data-anim~=base]
 	{
 		clip: rect(auto, auto, auto, auto);
 	}
+}
+.progress-outer
+{
+    width: 17.5%; 
+    height: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; 
+}    
+.progress-enter
+{  
+    height: inherit;
+    background: rgba(180, 160, 120, .25); 
+}
+.progress-bg
+{
+    width: 0; 
+    height: inherit;
+    border-radius: 6px; 
+    background: repeating-linear-gradient(-45deg, #F5DEB3  25%, #D2B48C 0, #D2B48C 50%, #F5DEB3 0, #F5DEB3 75%, #D2B48C 0);
+    background-size: 10px 10px;
+    -webkit-animation: panoramic 20s linear infinite;
+    animation: panoramic 20s linear infinite;
+}
+@-webkit-keyframes panoramic
+{
+    to
+    {
+    	background-position: 200% 0;
+    }
+}
+@keyframes panoramic
+{
+    to
+    {
+    	background-position: 200% 0;
+    }
 }
