@@ -1,0 +1,37 @@
+.progress-outer
+{
+    width: 8cm; 
+    height: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; 
+}    
+.progress-enter
+{  
+    height: inherit;
+    background: rgba(180, 160, 120, .25); 
+}
+.progress-bg
+{
+    width: 0; 
+    height: inherit;
+    border-radius: 6px; 
+    background: repeating-linear-gradient(-45deg, #F5DEB3  25%, #D2B48C 0, #D2B48C 50%, #F5DEB3 0, #F5DEB3 75%, #D2B48C 0);
+    background-size: 10px 10px;
+    -webkit-animation: panoramic 20s linear infinite;
+    animation: panoramic 20s linear infinite;
+}
+@-webkit-keyframes panoramic
+{
+    to
+    {
+    	background-position: 200% 0;
+    }
+}
+@keyframes panoramic
+{
+    to
+    {
+    	background-position: 200% 0;
+    }
+}
